@@ -1,0 +1,4 @@
+total 12
+drwxrwxrwx+ 2 codespace codespace 4096 Jul  3 04:13 docs
+drwxrwxrwx+ 2 codespace codespace 4096 Jul  3 04:13 logs
+drwxrwxrwx+ 2 codespace codespace 4096 Jul  3 04:13 src

@@ -1,0 +1,24 @@
+  File: original.txt
+  Size: 17        	Blocks: 8          IO Block: 4096   regular file
+Device: 7,4	Inode: 1310831     Links: 1
+Access: (0666/-rw-rw-rw-)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-07-03 04:41:29.886374127 +0000
+Modify: 2026-07-03 04:41:29.886374127 +0000
+Change: 2026-07-03 04:41:29.886374127 +0000
+ Birth: 2026-07-03 04:41:29.886374127 +0000
+  File: hardlink.txt
+  Size: 17        	Blocks: 8          IO Block: 4096   regular file
+Device: 7,4	Inode: 1310814     Links: 1
+Access: (0666/-rw-rw-rw-)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-07-03 04:13:55.625629841 +0000
+Modify: 2026-07-03 04:13:55.329629862 +0000
+Change: 2026-07-03 04:13:55.535629847 +0000
+ Birth: 2026-07-03 04:13:55.329629862 +0000
+  File: symlink.txt -> original.txt
+  Size: 12        	Blocks: 0          IO Block: 4096   symbolic link
+Device: 7,4	Inode: 1310815     Links: 1
+Access: (0777/lrwxrwxrwx)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-07-03 04:13:55.443629854 +0000
+Modify: 2026-07-03 04:13:55.383629858 +0000
+Change: 2026-07-03 04:13:55.383629858 +0000
+ Birth: 2026-07-03 04:13:55.383629858 +0000

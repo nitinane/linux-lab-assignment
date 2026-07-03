@@ -1,0 +1,7 @@
+Filesystem      Inodes  IUsed   IFree IUse% Mounted on
+overlay        2097152 203173 1893979   10% /
+tmpfs          1016900    213 1016687    1% /dev
+shm            1016900      1 1016899    1% /dev/shm
+/dev/root      3870720 243528 3627192    7% /vscode
+/dev/loop4     2097152 203173 1893979   10% /workspaces
+/dev/sda1      2949120     26 2949094    1% /tmp

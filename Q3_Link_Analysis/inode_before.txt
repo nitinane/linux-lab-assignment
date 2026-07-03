@@ -1,0 +1,3 @@
+1310814 -rw-rw-rw- 1 codespace codespace 17 Jul  3 04:13 hardlink.txt
+1310831 -rw-rw-rw- 1 codespace codespace 17 Jul  3 04:41 original.txt
+1310815 lrwxrwxrwx 1 codespace codespace 12 Jul  3 04:13 symlink.txt -> original.txt

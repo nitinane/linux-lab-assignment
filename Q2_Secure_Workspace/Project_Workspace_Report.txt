@@ -1,0 +1,34 @@
+SECURE PROJECT WORKSPACE SETUP REPORT
+
+1. Directory Structure Created
+mkdir -p ProjectX/{docs,src,logs}
+Structure: ProjectX/ containing docs/, src/, logs/, plus ProjectX/docs/readme.txt
+Observation: Organized the workspace by function to keep files logically separated.
+
+2. Permissions Before Modification
+Output: [paste permissions_before.txt content]
+Observation: Default permissions from directory creation allowed broader access 
+than needed.
+
+3. Permissions After Modification
+chmod 750 ProjectX
+chmod 640 ProjectX/docs/readme.txt
+Output: [paste permissions_after.txt content]
+Observation: ProjectX now allows owner full access, group read+execute only, 
+others none. readme.txt allows owner read/write, group read-only, others none.
+
+4. Ownership Details
+chown $(whoami):$(whoami) ProjectX -R
+Output: [paste ownership.txt content]
+Observation: All files are owned by the current user, ensuring only this 
+user/group controls access.
+
+5. Umask Value Used
+Output: [paste umask.txt content]
+Observation: The default umask subtracts write permission for group and others 
+from newly created files before the explicit chmod tightened it further.
+
+6. How Permissions Protect Project Data
+Restricting ProjectX to 750 and sensitive files to 640 ensures only the owner 
+and authorized group members can read or modify data, reducing risk of accidental 
+edits, leaks, or tampering.

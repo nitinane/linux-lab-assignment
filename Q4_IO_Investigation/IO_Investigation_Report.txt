@@ -1,0 +1,32 @@
+FILE ACCESS AND I/O INVESTIGATION REPORT
+
+1. Open Files Identified
+Command: lsof | head -20
+Output: [paste open_files_system.txt content]
+Observation: Shows files currently held open system-wide, a starting point to 
+identify which process might be holding a lock relevant to a logging issue.
+
+2. File Descriptor Observations
+Command: lsof -p $$, ls -l /proc/$$/fd
+Output: [paste fd_list.txt content]
+Observation: File descriptors 0, 1, 2 correspond to stdin, stdout, stderr for 
+this shell session.
+
+3. Output and Error Redirection Results
+Command: echo "test output" > out.txt / ls nonexistentfile 2> err.txt
+Output: [paste stdout_redirect_result.txt and stderr_redirect_result.txt content]
+Observation: ">" redirected standard output into out.txt, while "2>" redirected 
+only standard error from the failed command into err.txt — demonstrating stdout 
+and stderr are independent streams.
+
+4. Resource Limits Observed
+Command: ulimit -a, ulimit -n
+Output: [paste resource_limits.txt and max_open_files.txt content]
+Observation: The max open file descriptor limit affects how many files/sockets a 
+process can hold open; too low a limit causes "too many open files" errors.
+
+5. How Linux Manages File I/O
+Every open file is represented as a file descriptor mapped to an entry in the 
+process's file table, pointing to the actual inode/data. Redirection operators 
+reassign what a descriptor points to, without the program needing to know its 
+output was redirected.

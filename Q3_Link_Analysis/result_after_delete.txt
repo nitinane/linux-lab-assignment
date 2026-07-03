@@ -1,0 +1,5 @@
+--- After deleting original.txt ---
+original content
+cat: symlink.txt: No such file or directory
+1310814 -rw-rw-rw- 1 codespace codespace 17 Jul  3 04:13 hardlink.txt
+1310815 lrwxrwxrwx 1 codespace codespace 12 Jul  3 04:13 symlink.txt -> original.txt

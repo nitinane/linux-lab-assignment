@@ -1,0 +1,35 @@
+LINUX ENVIRONMENT VERIFICATION REPORT
+
+1. Username and Groups
+Command: whoami, id, groups
+Output: [paste username.txt, id.txt, groups.txt content]
+Observation: The account is a non-root user with supplementary group memberships 
+granting access to installed toolchains (docker, python, etc.) without full root 
+privileges.
+
+2. Current Shell
+Command: echo $SHELL, ps -p $$
+Output: [paste shell.txt, running_shell.txt content]
+Observation: $SHELL reflects the configured login shell from /etc/passwd, while 
+ps confirms bash is actively running this session.
+
+3. Current Working Directory
+Command: pwd
+Output: [paste pwd.txt content]
+Observation: Confirms the shell's present location in the filesystem hierarchy.
+
+4. Files and Directories in Workspace
+Command: ls -la
+Output: [paste ls.txt content]
+Observation: Lists all files including hidden ones, showing permissions, 
+ownership, and timestamps for each entry.
+
+5. Network Connectivity Verification
+Command: ping -c 4 google.com (or curl -Is https://google.com)
+Output: [paste network_check.txt content]
+Observation: Confirms outbound network connectivity and DNS resolution are 
+functional from within the container.
+
+Conclusion: The Linux environment is correctly configured with an unprivileged 
+user account, standard bash shell, expected group permissions, and working 
+network access.

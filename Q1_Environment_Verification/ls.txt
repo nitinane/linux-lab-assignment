@@ -1,0 +1,11 @@
+total 36
+drwxrwxrwx+ 2 codespace codespace 4096 Jul  3 04:38 .
+drwxrwxrwx+ 8 codespace root      4096 Jul  3 04:36 ..
+-rw-rw-rw-  1 codespace codespace   79 Jul  3 04:38 groups.txt
+-rw-rw-rw-  1 codespace codespace  198 Jul  3 04:38 id.txt
+-rw-rw-rw-  1 codespace codespace    0 Jul  3 04:38 ls.txt
+-rw-rw-rw-  1 codespace codespace   13 Jul  3 04:12 network_check.txt
+-rw-rw-rw-  1 codespace codespace   61 Jul  3 04:38 pwd.txt
+-rw-rw-rw-  1 codespace codespace   61 Jul  3 04:38 running_shell.txt
+-rw-rw-rw-  1 codespace codespace   10 Jul  3 04:38 shell.txt
+-rw-rw-rw-  1 codespace codespace   10 Jul  3 04:38 username.txt

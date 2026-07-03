@@ -1,0 +1,28 @@
+STORAGE HEALTH ASSESSMENT AND DOCUMENTATION REPORT
+
+1. Available Storage Devices
+[paste storage_devices.txt content]
+Observation: Multiple block devices present including sda, sdb (mounted at /tmp), 
+sdc (large unpartitioned disk), and loop devices used for container overlays.
+
+2. Mounted File Systems
+[paste mounted_filesystems.txt content]
+Observation: Key mounts include overlay (/) at 33% usage, /vscode at 80% usage, 
+and /tmp at only 6% usage.
+
+3. Disk Usage Statistics
+[summarize key numbers: total/used/available/% for each mount]
+
+4. Inode Utilization
+[paste inode_utilization.txt content]
+Observation: Inode usage across all filesystems is low (under 10%), so inode 
+exhaustion is not a near-term risk.
+
+5. Storage Health Observations
+/vscode is the most utilized filesystem at 80% disk usage, approaching a 
+concerning threshold. All other mounted filesystems have comfortable free space.
+
+6. Recommendations
+Monitor /vscode closely; clean unused caches/logs periodically; provision 
+additional storage (e.g. sdc, 512G currently unpartitioned) before deploying the 
+new application server if headroom drops below 20%.

@@ -1,0 +1,7 @@
+Filesystem     Type     Size  Used Avail Use% Mounted on
+overlay        overlay   32G  9.7G   21G  33% /
+tmpfs          tmpfs     64M     0   64M   0% /dev
+shm            tmpfs     64M     0   64M   0% /dev/shm
+/dev/root      ext4      29G   24G  5.9G  80% /vscode
+/dev/loop4     ext4      32G  9.7G   21G  33% /workspaces
+/dev/sda1      ext4      44G  2.5G   40G   6% /tmp

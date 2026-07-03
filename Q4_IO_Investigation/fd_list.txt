@@ -1,0 +1,6 @@
+total 0
+lrwx------ 1 codespace codespace 64 Jul  3 04:42 0 -> /dev/pts/0
+lrwx------ 1 codespace codespace 64 Jul  3 04:42 1 -> /dev/pts/0
+lrwx------ 1 codespace codespace 64 Jul  3 04:42 2 -> /dev/pts/0
+lrwx------ 1 codespace codespace 64 Jul  3 04:42 255 -> /dev/pts/0
+l-wx------ 1 codespace codespace 64 Jul  3 04:42 6 -> /dev/null

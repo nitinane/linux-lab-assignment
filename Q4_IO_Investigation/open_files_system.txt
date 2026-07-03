@@ -1,0 +1,20 @@
+COMMAND    PID  TID TASKCMD        USER   FD      TYPE             DEVICE  SIZE/OFF    NODE NAME
+docker-in    1                codespace  cwd       DIR               0,45      4096 1101733 /
+docker-in    1                codespace  rtd       DIR               0,45      4096 1101733 /
+docker-in    1                codespace  txt       REG               8,17    845272  774629 /usr/sbin/docker-init
+docker-in    1                codespace    0u      CHR                1,3       0t0      49 /dev/null
+docker-in    1                codespace    1w     FIFO               0,14       0t0   96542 pipe
+docker-in    1                codespace    2w     FIFO               0,14       0t0   96543 pipe
+sh           7                codespace  cwd       DIR               0,45      4096 1101733 /
+sh           7                codespace  rtd       DIR               0,45      4096 1101733 /
+sh           7                codespace  txt       REG               0,45    129784 1048830 /usr/bin/dash
+sh           7                codespace  mem       REG               0,45   2125328 1049464 /usr/lib/x86_64-linux-gnu/libc.so.6
+sh           7                codespace  mem       REG               0,45    236616 1049444 /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+sh           7                codespace    0u      CHR                1,3       0t0      49 /dev/null
+sh           7                codespace    1w     FIFO               0,14       0t0   96542 pipe
+sh           7                codespace    2w     FIFO               0,14       0t0   96543 pipe
+sshd        35                     root  cwd   unknown                                      /proc/35/cwd (readlink: Permission denied)
+sshd        35                     root  rtd   unknown                                      /proc/35/root (readlink: Permission denied)
+sshd        35                     root  txt   unknown                                      /proc/35/exe (readlink: Permission denied)
+sshd        35                     root NOFD                                                /proc/35/fd (opendir: Permission denied)
+dockerd     64                     root  cwd   unknown                                      /proc/64/cwd (readlink: Permission denied)
